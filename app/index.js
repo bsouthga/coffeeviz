@@ -25,7 +25,8 @@ module.exports = CoffeeVizGenerator = (function(_super) {
     this.mkdir("app/css");
     this.mkdir("app/lib");
     this.mkdir("app/lib/vendor");
-    return this.mkdir("app/src");
+    this.mkdir("app/src");
+    return this.mkdir("dist");
   };
 
   CoffeeVizGenerator.prototype.copyMainFiles = function() {

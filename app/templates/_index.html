@@ -3,9 +3,13 @@
 <head>
 
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
+
+  <!-- build:css:dist app.min.css -->
   <link rel="stylesheet" href="./lib/vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
+  <!-- /build -->
 
 </head>
 <body>
@@ -29,10 +33,13 @@
     </footer>
   </div>
 
+  <!-- add scripts here for concatenation into production -->
+  <!-- build:js:dist app.min.js -->
   <script src="lib/vendor/d3/d3.min.js"></script>
   <script src="lib/vendor/jquery/jquery.min.js"></script>
   <script src="lib/vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="lib/main.js"></script>
+  <!-- /build -->
 
 </body>
 </html>

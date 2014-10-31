@@ -13,6 +13,7 @@ module.exports = class CoffeeVizGenerator extends yeoman.generators.Base
       @mkdir "app/lib"
       @mkdir "app/lib/vendor"
       @mkdir "app/src"
+      @mkdir "dist"
   copyMainFiles: ->
       @copy "_index.html", "app/index.html"
       @copy "_main.coffee", "app/src/main.coffee"

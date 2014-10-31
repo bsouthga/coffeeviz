@@ -36,7 +36,14 @@ cd myproject
 yo coffeeviz
 ```
 
-to create the folder structure, which will look like this
+finally, copy dependencies by entering
+
+```
+grunt setup
+```
+
+
+the folder structure will look like this
 
 ```
 myproject
@@ -56,6 +63,7 @@ myproject
 │   ├── bootstrap
 │   ├── jquery
 │   └── d3
+├── dist
 ├── node_modules
 ├── bower.json
 ├── package.json
@@ -66,4 +74,10 @@ Now, to start a development server and get to work, simply run
 
 ```
 grunt
+```
+
+Once your ready to deploy, enter the deploy path in `Gruntfile.coffee` and enter
+
+```
+grunt deploy
 ```
